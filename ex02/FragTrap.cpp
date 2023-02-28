@@ -6,7 +6,7 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 08:55:21 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/24 09:02:06 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/28 09:01:28 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,13 @@ FragTrap::~FragTrap()
 	std::cout << "<" << this->getName() << "> is not a beautiful FragTrap anymore" << std::endl; 
 }
 
-void FragTrap::operator=(const FragTrap &s)
+FragTrap& FragTrap::operator=(const FragTrap &s)
 {
 	this->setName(s.getName());
 	this->setAttackDamage(s.getAttackDamage());
 	this->setEnergyPoints(s.getEnergyPoints());
 	this->setHitPoints(s.getHitPoints());
+	return(*this);
 }
 
 void FragTrap::highFivesGuys()

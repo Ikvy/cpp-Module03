@@ -6,18 +6,19 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 07:02:25 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/24 08:43:00 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/28 09:00:48 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp" 
 
-void ClapTrap::operator=(const ClapTrap &c)
+ClapTrap& ClapTrap::operator=(const ClapTrap &c)
 {
 	this->name = c.getName();
 	this->AttackDamage = c.getAttackDamage();
 	this->EnergyPoints = c.getEnergyPoints();
 	this->HitPoints = c.getHitPoints();
+	return (*this);
 }
 
 ClapTrap::ClapTrap(std::string name) : name(name), HitPoints(10), EnergyPoints(10), AttackDamage(0)

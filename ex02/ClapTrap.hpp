@@ -6,7 +6,7 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 06:59:53 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/24 08:42:23 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/28 09:01:03 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ class ClapTrap
 	public:
 		ClapTrap();
 		ClapTrap(std::string name);
-		void operator=(const ClapTrap& c);
+		ClapTrap &operator=(const ClapTrap& c);
 		ClapTrap(const ClapTrap &cpy);
 		~ClapTrap();
 

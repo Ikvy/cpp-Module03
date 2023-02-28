@@ -6,7 +6,7 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 07:44:23 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/24 08:35:14 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/28 08:57:18 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	tests()
 	fanny.attack("Bob");
 	fanny.attack("Bob");
 	fanny.beRepaired(15);
-	fanny.guarGate();
+	fanny.guardGate();
 
 	std::cout << std::endl; 
 

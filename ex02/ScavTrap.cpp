@@ -6,9 +6,11 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 08:15:02 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/28 09:08:46 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/28 09:00:07 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//This file is completly useless for this but the subject tells to put it here 
 
 #include "ScavTrap.hpp"
 
@@ -44,20 +46,4 @@ ScavTrap& ScavTrap::operator=(const ScavTrap &s)
 void ScavTrap::guardGate()
 {
 	std::cout << this->getName() << " has entered Gate keeper mode" << std::endl; 
-}
-
-void ScavTrap::attack(const std::string& target)
-{
-	if (!this->EnergyPoints)
-	{
-		std::cout << this->name << " is out of energy..." << std::endl; 
-		return;
-	}
-	if (!this->HitPoints)
-	{
-		std::cout << this->name << " is out of life..." << std::endl; 
-		return;
-	}
-	this->EnergyPoints -=1;
-	std::cout << this->name << " hurt " << target << " and did " << this->AttackDamage << " damages" << std::endl; 
 }
